@@ -29,12 +29,14 @@ body {
   text-align: left;
   width: 100%;
   font-size: 32px;
+  margin: 1em 0;
 }
 
 .titulo-principal span {
   color: var(--verde);
 }
 
+/* Container dos botões */
 .botoes {
   display: block;
   width: 100%;
@@ -55,6 +57,7 @@ body {
   border-right: 2px solid var(--botao-ativo);
   border-top: none;
   cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 .botao:first-child {
@@ -66,11 +69,13 @@ body {
   border-bottom: 4px solid var(--verde);
 }
 
+/* Área dos textos e abas */
 .abas-textos {
   background-color: var(--texto-fundo);
   padding: 40px;
   border-radius: 0 0 40px 40px;
   width: 100%;
+  box-sizing: border-box; /* Garante que o padding não quebre a largura */
 }
 
 .aba-conteudo {
@@ -90,8 +95,20 @@ body {
   text-align: center;
   color: var(--verde);
   text-transform: uppercase;
+  margin-top: 10px;
 }
 
+/* Estilização do Contador */
+.contador {
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+  margin-top: 20px;
+  color: var(--branco);
+  font-weight: bold;
+}
+
+/* Responsividade */
 @media screen and (min-width: 768px) {
   .botoes {
     display: flex;
