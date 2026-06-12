@@ -17,10 +17,10 @@ for (let i = 0; i < botoes.length; i++) {
 
 // 3. Datas Objetivos
 const tempos = [
-    new Date(new Date().getTime() + 2 * 365 * 24 * 60 * 60 * 1000), // 2 anos
+    new Date(new Date().getTime() + 1 * 265 * 24 * 60 * 60 * 1000), // 2 anos
     new Date("2026-12-31T23:59:59"), 
-    new Date("2027-12-31T23:59:59"), 
-    new Date("2028-12-31T23:59:59")  
+    new Date("2026-12-25T23:59:59"), 
+    new Date("2026-12-31T23:59:59")  
 ];
 
 // 4. Função de Cálculo (COM A LINHA "TEMPO RESTANTE")
